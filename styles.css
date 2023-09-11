@@ -29,6 +29,10 @@ body{
     margin:0.5rem;
 }
 
+.cellprops-actions-cont > *:hover{
+    cursor: pointer;
+}
+
 .cellprops-actions-cont > select{
     border:none;
     border-radius: 1px;
@@ -193,11 +197,11 @@ body{
     outline: none;
 }
 
-.color-prop{
+.text-color-prop, .background-color-prop{
     position: relative;
 }
 
-.color-prop > input{
+.text-color-prop > input, .background-color-prop > input{
     opacity: 0;
     position: absolute;
     top:0;
