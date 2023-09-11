@@ -30,7 +30,9 @@ for(let i=0; i<rows; i++){
         let cell = document.createElement("div");
         cell.setAttribute("class","cell")
         cell.setAttribute("contenteditable",true);
-        cell.setAttribute("id",`${i+j}`);
+        cell.setAttribute("rid",i);
+        cell.setAttribute("cid",j)
+        cell.setAttribute("spellcheck",false);
         rowCont.appendChild(cell);
         addListenerForAddressBarDisplay(cell,i,j);
     }
